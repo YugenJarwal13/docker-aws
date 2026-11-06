@@ -9,7 +9,7 @@ const httpServer = createServer(app)
 const io = new Server(httpServer, {
     cors: {
         origin: "*",
-        METHODS: ["GET", "POST"]    
+        methods: ["GET", "POST"]    
     }
 })
 

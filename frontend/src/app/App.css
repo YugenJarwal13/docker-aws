@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Remote Cursor and Selection Styling for y-monaco */
+.yRemoteSelection {
+  background-color: rgba(250, 150, 0, 0.3);
+}
+
+.yRemoteSelectionHead {
+  position: absolute;
+  border-left: #f59e0b solid 2px;
+  border-top: #f59e0b solid 2px;
+  border-bottom: #f59e0b solid 2px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.yRemoteSelectionHead::after {
+  position: absolute;
+  content: ' ';
+  border: 3px solid #f59e0b;
+  border-radius: 4px;
+  left: -4px;
+  top: -5px;
+}
